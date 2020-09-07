@@ -23,7 +23,7 @@ public class ConectaBanco {
         
         try{
            Class.forName("org.postgresql.Driver");
-           Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Tec","postgres", "postgres");
+           Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Tec","postgres", "root");
           // JOptionPane.showMessageDialog(null,"Conectado com sucesso ao banco de dados!");
            return con;
         }
